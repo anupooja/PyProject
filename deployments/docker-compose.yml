@@ -1,0 +1,13 @@
+version: "2"
+services:
+  pythonrestservice:
+    container_name: pythonrestservice-container
+    build:
+      context: ../
+      dockerfile: deployments/app/Dockerfile
+    image:  pythonrestservice:v1  
+    ports:
+      - "5001:5000"
+      
+      
+      
